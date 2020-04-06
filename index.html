@@ -446,8 +446,21 @@
 						<header>
 							<h3><a href="#">August 29, 2019</a></h3>
 						</header>
-						<ol> <dt>More verification, SoPU changes have been made</dt>
-							<dt>Tested with floating point in MatLab</dt>
+						<ol> <dt>
+							<ul>
+								<li>Started working on C-based image parser, breaking the image down, 
+									streaming image, pseudocode for that</li>
+								<li>How do you drive a UART controller from a c program?</li>
+								<ul>Linux based; tty logical device</ul>
+								<ul>Break up image, get raw bytes, distribute those</ul>
+								<ul>Use GCC</ul>
+								<li>Suggestions from Dr. Pearlstein</li>
+								<ul>Use 16 bit number for quantization and noise</ul>
+								<ul>What is the dynamic range? You can always scale it finding min and max, preprocess and normalize</ul>
+								<ul>Chunky vs Planar: With line buffers you want it to be chunky</ul>
+								<ul>Avoid saturation to the best of our ability</ul>
+							</ul>
+						</dt>
 					   </ol>
 					</article>
 
