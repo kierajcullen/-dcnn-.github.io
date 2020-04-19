@@ -40,26 +40,21 @@
 			<!-- Banner -->
 				<section id="banner">
 				<div>
+					<h2><a href="#">Introduction</a></h2>
+					<header>
+						<p>
+						Our team designed a system for accelerating the core operations required by DCNNs, 
+						by using a low-cost Field Programmable Gate Array (FPGA) platform. We designed an 
+						end-to-end accelerator platform, including a PC running Linux, an FPGA board and PC-to-FPGA 
+						communication via serial data (over USB). The ultimate goal of our project is build high level architecture 
+						that could be implemented on a cheap piece of hardware.
+						</p>					
+					</header>	
 				</section>
 				</div>
-
-			<!-- Main -->
-			<div class="wrapper style2">
-				<header>
-				<article id="main" class="container special">
-					<a href="#" class="image featured"><img src=”images/pic24.gif” alt=”animated” />
-					<header>
-						<h2><a href="#">Introduction</a></h2>
-						<p>
-							Our team designed a system for accelerating the core operations required by DCNNs, 
-							by using a low-cost Field Programmable Gate Array (FPGA) platform. We designed an 
-							end-to-end accelerator platform, including a PC running Linux, an FPGA board and PC-to-FPGA 
-							communication via serial data (over USB). The ultimate goal of our project is build high level architecture 
-							that could be implemented on a cheap piece of hardware. 
-						</p>
-					</header>
+			
+					<a href="#" class="image fit"><img src="images/pic24.gif" alt="" /></a>
 				</article>
-			</header>
 
 			</div>
 
@@ -363,11 +358,12 @@
 						<ol> <dt> 
 							<ul>
 								<li>Animations agreed upon, set to finish before senior project presentations</li>
-								<li>Paul is trying to get serial communication working, still Linux based</li>
-								<ul>Ran program he wrote, would return the character T, or it would time out and not return anything, seemed random</ul>
-								<ul>Possible explanation: non-blocking will just come back, should not time out, can return null</ul>
-								<ul>Check the results, do nonclocking and see how much valid data is present, reading raw bytes from a byte stream</ul>
+								<ul><li>Paul is trying to get serial communication working, still Linux based</li>
+								<li>Ran program he wrote, would return the character T, or it would time out and not return anything, seemed random</li>
+								<li>Possible explanation: non-blocking will just come back, should not time out, can return null </li>
+								<li>Check the results, do nonclocking and see how much valid data is present, reading raw bytes from a byte stream</li>
 							</ul>	
+						</ul>
 						</dt>
 						</ol>
 					</article>
@@ -379,25 +375,18 @@
 						<ol> <dt>
 							<ul>
 								<li>Self check is finished, random number generator will be used to test</li>
-								<ul>Error with ILB fixed, memory spaces were too big</ul>
-								<ul>SOPU is in the testing phase</ul>
-								<ul>Integration and unit testing</ul>
+								<li>Error with ILB fixed, memory spaces were too big</li>
+								<li>SOPU is in the testing phase</li>
+								<li>Integration and unit testing</li>
 								<li>Work on the documentation</li>
 								<li>What speed to use for UART?</li>
-								<ul>9600, slow, stalls for new data but at least it works</ul>
+								<ul>
+									<li>9600, slow, stalls for new data but at least it works</li></ul>
 								<li>Port to Windows, having Linux issues</li>
 								<li>Linux on FPGA, FTDI chip</li>
 								<li>Get numbers on FPGA utilization, figure out the resources required</li>
 							</ul>		
 						</dt>
-						</ol>
-					</article>
-
-					<article>
-						<header>
-							<h3><a href="#">Novermber 7, 2019</a></h3>
-						</header>
-						<ol> <dt> EDIT THIS </dt>
 						</ol>
 					</article>
 
@@ -413,9 +402,11 @@
 								<li>Line buffer synchronization</li>
 								<li>Must get the interface to work</li>
 								<li>Create more efficient test benches</li>
-								<ul>Issue pass/fail </ul>
-								<ul>Create random data to test</ul>
-								<ul>Self checking test</ul>
+								<ul>
+									<li>Issue pass/fail</li>
+									<li>Create random data to test</li>
+									<li>Self checking test</li>
+							</ul>
 							</ul>
 						</dt>
 						</ol>
@@ -428,24 +419,18 @@
 						<ol> <dt>
 							<ul>
 								<li>Write program to read data from the stream</li>
-									<ul>Fread to read in the entire file into the array</ul>
-									<ul>Convert text file</ul>
-									<ul>512x512, MatLab to read in files iamread</ul>
-									<ul>Take the array that you read and convert to csv file</ul>
-									<ul>Flatten the array ; ) -- converts any number </ul>
+									<ul>
+										<li>Fread to read in the entire file into the array</li>
+										<li>Convert text file</li>
+										<li>512x512, MatLab to read in files iamread</li>
+										<li>Take the array that you read and convert to csv file</li>
+									<li>Flatten the array ; ) -- converts any number</li>
+									</ul>
 									<li>Black white pixels, all 0’s, all 255’s, simple patterns</li>
 									<li>Architecture document has been updated</li>
 									<li>Make a gif of pixel movement</li>
 							</ul>
 						</dt>
-						</ol>
-					</article>
-
-					<article>
-						<header>
-							<h3><a href="#">October 17th, 2019</a></h3>
-						</header>
-						<ol> <dt> EDIT THIS </dt>
 						</ol>
 					</article>
 
@@ -474,7 +459,7 @@
 						<ol> <dt> 
 							<ul>
 								<li>Top level diagram should be completed</li>
-								<ul>Drawing that shows connectivity</ul>
+								<ul><li>Drawing that shows connectivity</li></ul>
 								<li>Create standard naming convention</li>
 								<li>Prototypes for blocks by 9/19/2019, finalize hardware documentation by 9/26/2019</li>
 							</ul>
@@ -486,8 +471,12 @@
 						<header>
 							<h3><a href="#">September 4, 2019</a></h3>
 						</header>
-						<ol> <dt>More verification, SoPU changes have been made</dt>
-							 <dt>Tested with floating point in MatLab</dt>
+						<ol> <dt>
+							<ul> 
+								<li> More verification, SoPU changes have been made</li> 
+								<li>Tested with floating point in MatLab</li>
+							</ul>
+						</dt>
 						</ol>
 					</article>
 
@@ -498,7 +487,9 @@
 						<ol> <dt>
 							<ul>
 								<li>Changing image size to 512x512x3</li>
-								<ul>This is what most conv nets use, not bottlenecked by memory</ul>
+								<ul>
+									<li>This is what most conv nets use, not bottlenecked by memory</li>
+								</ul>
 								<li>Maintain Kernel size of 7x7</li>
 							</ul>
 						</dt>
@@ -514,14 +505,19 @@
 								<li>Started working on C-based image parser, breaking the image down, 
 									streaming image, pseudocode for that</li>
 								<li>How do you drive a UART controller from a c program?</li>
-								<ul>Linux based; tty logical device</ul>
-								<ul>Break up image, get raw bytes, distribute those</ul>
-								<ul>Use GCC</ul>
+								<ul>
+									<li>Linux based; tty logical device</li>
+								<li>Break up image, get raw bytes, distribute those</li>
+								<li>Use GCC</li>
+								</ul>
 								<li>Suggestions from Dr. Pearlstein</li>
-								<ul>Use 16 bit number for quantization and noise</ul>
-								<ul>What is the dynamic range? You can always scale it finding min and max, preprocess and normalize</ul>
-								<ul>Chunky vs Planar: With line buffers you want it to be chunky</ul>
-								<ul>Avoid saturation to the best of our ability</ul>
+								<ul>
+									<li>Use 16 bit number for quantization and noise</li>
+									<li>What is the dynamic range? You can always scale it finding min and max, preprocess and normalize</li>
+								<li>Chunky vs Planar: With line buffers you want it to be chunky</li>
+								<li>Avoid saturation to the best of our ability</ul>
+
+								</ul>
 							</ul>
 						</dt>
 					   </ol>
@@ -536,16 +532,20 @@
 								<li>Transmission medium should be USB/UART</li>
 								<li>Total RAM: 500 kilobytes</li>
 								<li>Requirements (for your customer)</li>
-								<ul>Image: 512x512x3 input initial</ul>
-								<ul>“Same” setting initial, “valid” setting stretch</ul>
+								<ul>
+									<li>Image: 512x512x3 input initial</li>
+									<li>“Same” setting initial, “valid” setting stretch</li>
+								</ul>
 								<li>Kernel: 7x7x3 size initial</li>
 								<li>Coefficients are Q0.15 fixed point</li>
 								<li>Output: 1 feature map initial, n feature maps stretch</li>
 								<li>UI: fileIO user program initial, API stretch </li>
 								<li>Specifications</li>
-								<ul>Specify hardware, clock rate, BAUD rate ?</ul>
-								<ul>USB and serial</ul>
-								<ul>R0B0G0 (ex. to send pixels) byte by byte</ul>
+								<ul>
+									<li>Specify hardware, clock rate, BAUD rate ?</li>
+									<li>USB and serial</li>
+									<li>R0B0G0 (ex. to send pixels) byte by byte</li>
+							</ul>
 							</ul>
 						</dt>
 					   </ol>
@@ -579,10 +579,12 @@
 								<li>Build a convolution hardware framework using Verilog, then using (low level) 
 									C have to PC send commands/image data to the FPGA</li>
 								<li>Explore the implementation of neural networks in FPGAs</li>
-								<ul>Map out resource usage, latency for deep neural network architectures and hyperparameters</ul>
-								<ul>Latency refers to the total time (typically expressed in units of “clocks”), 
-									required for a single iteration of the algorithm to complete</ul>
-								<ul>Demonstrate deep learning techniques in FPGA applications</ul>
+								<ul>
+									<li>Map out resource usage, latency for deep neural network architectures and hyperparameters</li>
+									<li>Latency refers to the total time (typically expressed in units of “clocks”), 
+									required for a single iteration of the algorithm to complete</li>
+									<li>Demonstrate deep learning techniques in FPGA applications</li>
+									</ul>
 							</ul>
 						</dt>
 					   </ol>
