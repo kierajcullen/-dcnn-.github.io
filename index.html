@@ -101,6 +101,31 @@
 				<div class="reel">
 					<article>
 						<header>
+							<h3><a href="#">April 13, 2020</a></h3>
+						</header>
+						<ol> <dt>
+							<ul>
+								<li>Cut run time down to 4 minutes which is too slow; however, altered c sharp which is successful</li>
+								<li>Send 500-600 bytes, give the fpga time to read that, and go from there</li>	
+								<li>When you did the sending 512x512 +29, were you using two different processes</li>
+									<ul>
+										<li>Launch two different applications, conflicts with ports, could send but did not read</li>
+									</ul>
+								<li>Configure to be any depth you want</li>
+								<li>Rebuffer property</li>
+								<ul>
+									<li>Pushed sequential and write everything at once, version one in git</li>
+									<li>Version 2: The output might be garbage, or the bytes are out of order</li>
+								</ul>
+								<li>Latency issue with software, look into that this week</li>
+								<li>Use proper flow control</li>
+								<li>Document what the goal and importance of the project is</li>
+							 </dt>
+						</ol>
+					</article>
+
+					<article>
+						<header>
 							<h3><a href="#">April 6, 2020</a></h3>
 						</header>
 						<ol> <dt>
