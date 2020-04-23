@@ -52,8 +52,6 @@
 					</header>	
 				</section>
 				</div>
-			
-					<a href="#" class="image fit"><img src="images/pic24.gif" alt="" /></a>
 				</article>
 
 			</div>
@@ -99,6 +97,63 @@
 			<!-- Carousel -->
 			<section class="carousel">
 				<div class="reel">
+					<article>
+						<header>
+							<h3><a href="#">April 20, 2020</a></h3>
+						</header>
+						<ol> <dt>
+							<ul>
+								<li>Instability at 6MB</li>
+								<li>Output data does not make sense</li>	
+								<li>Finite size repo for everything so we can't let too much data collect before emptying it</li>
+									<ul>
+										<li>Handshaking could fix this, exclussively tried RTS</li>
+										<li>Xon Xoff, software flow control, control sequence coming from the computer and it is difficult to add functionality and clear data</li>
+										<li>Slower byte by byte version is working, difficult to debug without a scope</li>
+									</ul>
+								<li>Latency determined by the host PC, new laptop worked quickly, trying one byte at a time</li>
+								<ul>
+									<li>Never got to packeting, focus was on handshaking</li>
+								</ul>
+								<li>Wrapped everything into one package</li>
+								<ul>
+									<li>Streamline python application that does everything for you</li>
+								</ul>
+								<li>Research Amdahl's Law</li>
+								<ul>
+								<li>Analysis or process, speed up some part of the process, non parallelizable piece that is slow, gives you best case speed up, leaves one piece standar</li>
+								<li>Piece of hardware runs faster than pc; however, non parallelizable piece, bottlenecked, interface
+								</li>
+							</ul>
+							</dt>
+						</ol>
+					</article>
+
+					<article>
+						<header>
+							<h3><a href="#">April 13, 2020</a></h3>
+						</header>
+						<ol> <dt>
+							<ul>
+								<li>Cut run time down to 4 minutes which is too slow; however, altered c sharp which is successful</li>
+								<li>Send 500-600 bytes, give the fpga time to read that, and go from there</li>	
+								<li>When you did the sending 512x512 +29, were you using two different processes</li>
+									<ul>
+										<li>Launch two different applications, conflicts with ports, could send but did not read</li>
+									</ul>
+								<li>Configure to be any depth you want</li>
+								<li>Rebuffer property</li>
+								<ul>
+									<li>Pushed sequential and write everything at once, version one in git</li>
+									<li>Version 2: The output might be garbage, or the bytes are out of order</li>
+								</ul>
+								<li>Latency issue with software, look into that this week</li>
+								<li>Use proper flow control</li>
+								<li>Document what the goal and importance of the project is</li>
+							 </dt>
+						</ol>
+					</article>
+
 					<article>
 						<header>
 							<h3><a href="#">April 6, 2020</a></h3>
